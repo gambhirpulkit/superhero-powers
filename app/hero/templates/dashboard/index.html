@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta charset="utf-8">
+    <title>Dashboard</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link href="http://leapfrogui.com/controlfrog-v1.4/cf/css/bootstrap.css" rel="stylesheet">
+    <link href="http://leapfrogui.com/controlfrog-v1.4/cf/css/controlfrog.css" rel="stylesheet" media="screen">
+
+    <script src="http://code.jquery.com/jquery-1.9.1.min.js"></script>
+    <script src="http://leapfrogui.com/controlfrog-v1.4/cf/js/jquery.sparklines.js"></script>
+    <script src="http://leapfrogui.com/controlfrog-v1.4/cf/js/bootstrap.js"></script>
+
+
+    <script>
+        var themeColour = 'black';
+    </script>
+    <script src="http://leapfrogui.com/controlfrog-v1.4/cf/js/controlfrog.js"></script>
+</head>
+<body class="white">
+
+<div class="cf-container cf-nav-active">
+
+    <div class="row">
+        <div class="col-sm-6 cf-item">
+            <div class="inner">
+                <header>
+                    <p><span></span>Line chart</p>
+                </header>
+                <div>
+                    Img
+                </div>
+            </div> <!-- //end inner -->
+            <div class="row">
+                <div class="col-sm-3 cf-item">
+                    <header>
+                        <p><span></span>Total heroes</p>
+                    </header>
+                    <div class="content">
+                        <div class="cf-yn">
+                            <div class="metric m-red">
+                                {{total_heroes}}
+                            </div>
+                        </div>
+                    </div>
+
+                </div> <!-- //end cf-item -->
+                <div class="col-sm-3 cf-item">
+                    <header>
+                        <p><span></span>Unique powers</p>
+                    </header>
+                    <div class="content">
+                        <div class="cf-yn yn-y">
+                            <div class="metric m-green">
+                                {{unique_powers}}
+                            </div>
+                        </div>
+                    </div>
+                </div> <!-- //end cf-item -->
+            </div> <!-- // end row -->
+        </div> <!-- //end col -->
+        <div class="col-sm-6 cf-item">
+            <div class="inner">
+                <header>
+                    <p><span></span>Stacked bar chart</p>
+                </header>
+                <div>
+                    Image
+                </div>
+            </div> <!-- //end inner -->
+            <div class="row">
+                <div class="col-sm-3 cf-item">
+                    <header>
+                        <p><span></span>Shared powers</p>
+                    </header>
+                    <div class="content">
+                        <div class="cf-yn">
+                            <div class="metric m-red">
+                                {{shared_powers}}
+                            </div>
+                        </div>
+                    </div>
+
+                </div> <!-- //end cf-item -->
+
+            </div> <!-- // end row -->
+        </div> <!-- //end col -->
+    </div> <!-- //end col -->
+</div>
+</div> <!-- //end container -->
+
+</body>
+
+</html>
